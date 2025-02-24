@@ -19,4 +19,14 @@ public class SpeakerServiceImpl implements SpeakerService {
     public List<Speaker> findAll() {
         return speakerRepository.findAll();
     }
+
+    @Override
+    public Speaker create(Speaker speaker) {
+        return speakerRepository.create(speaker);
+    }
+
+    @Override
+    public Speaker get(int id) {
+        return speakerRepository.get(id);
+    }
 }
